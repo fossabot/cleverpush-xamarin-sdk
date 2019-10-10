@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Com.CleverPush</id>
+        <version>1.0.0</version>
+        <title>CleverPush Xamarin SDK</title>
+        <authors>CleverPush</authors>
+        <owners>CleverPush</owners>
+        <licenseUrl>https://github.com/cleverpush/cleverpush-xamarin-sdk/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/cleverpush/cleverpush-xamarin-sdk</projectUrl>
+        <iconUrl>https://github.com/cleverpush/cleverpush-xamarin-sdk/blob/master/nuget_icon.png?raw=true</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>CleverPush Xamarin SDK</description>
+        <summary>CleverPush Xamarin SDK.</summary>
+        <tags>xamarin, push, cleverpush</tags>
+        <dependencies>
+            <group targetFramework="MonoAndroid">
+                <dependency id="Xamarin.Android.Support.v4" version="26.0.2" />
+                <dependency id="Xamarin.Android.Support.v7.CardView" version="26.0.2" />
+                <dependency id="Xamarin.Android.Support.CustomTabs" version="26.0.2" />
+                <dependency id="Xamarin.GooglePlayServices.Ads.Identifier" version="71.1600.0" />
+                <dependency id="Xamarin.Firebase.Messaging" version="71.1740.0" />
+            </group>
+            <group targetFramework="netstandard1.0">
+                <dependency id="NETStandard.Library" version="1.6.1" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Com.CleverPush\bin\Release\netstandard1.0\CleverPush.pdb" target="lib\netstandard1.0" />
+        <file src="Com.CleverPush\bin\Release\netstandard1.0\CleverPush.dll" target="lib\netstandard1.0" />
+        <file src="Com.CleverPush.Abstractions\bin\Release\netstandard1.0\Com.CleverPush.Abstractions.pdb" target="lib\netstandard1.0" />
+        <file src="Com.CleverPush.Abstractions\bin\Release\netstandard1.0\Com.CleverPush.Abstractions.dll" target="lib\netstandard1.0" />
+
+        <file src="Com.CleverPush.Android\bin\Release\*CleverPush.*" target="lib\MonoAndroid10" />
+
+        <file src="Com.CleverPush.iOS\bin\Release\*CleverPush.*" target="lib\Xamarin.iOS10" />
+    </files>
+</package>

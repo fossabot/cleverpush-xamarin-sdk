@@ -1,0 +1,9 @@
+﻿<metadata>
+	<attr path="/api/package[@name='com.cleverpush']" name="managedName">Com.CleverPush.Android</attr>
+
+	<attr path="/api/package[@name='com.cleverpush.listener']" name="managedName">Com.CleverPush.Android</attr>
+	
+	<!--
+    <attr path="/api/package[@name='com.cleverpush']/class[@name='NotificationExtenderService']" name="extends">Android.App.IntentService</attr>
+	-->
+</metadata>
