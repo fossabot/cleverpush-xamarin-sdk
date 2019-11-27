@@ -19,6 +19,7 @@ namespace Com.CleverPush.Example.Android
 
 		 Switch pushSwitch = FindViewById<Switch>(Resource.Id.pushSwitch);
 
+
 		 pushSwitch.CheckedChange += delegate
          {
 			 if (pushSwitch.Checked)

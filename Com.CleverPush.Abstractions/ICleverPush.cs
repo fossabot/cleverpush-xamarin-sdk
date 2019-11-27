@@ -9,5 +9,6 @@ namespace Com.CleverPush.Abstractions
 
       void Subscribe();
 	  void Unsubscribe();
+	  void ShowTopicsDialog();
 	}
 }

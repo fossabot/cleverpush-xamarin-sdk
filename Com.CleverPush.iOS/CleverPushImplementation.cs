@@ -82,9 +82,14 @@ namespace Com.CleverPush
 	  public override void Unsubscribe()
 	  {
 		  iOS.CleverPush.Unsubscribe();
-	  }
+		}
 
-		public void DidReceiveNotificationExtensionRequest(UNNotificationRequest request, UNMutableNotificationContent replacementContent)
+		public override void ShowTopicsDialog()
+		{
+			iOS.CleverPush.ShowTopicsDialog();
+		}
+
+			public void DidReceiveNotificationExtensionRequest(UNNotificationRequest request, UNMutableNotificationContent replacementContent)
 		{
 			iOS.CleverPush.DidReceiveNotificationExtensionRequest(request, replacementContent);
 		}

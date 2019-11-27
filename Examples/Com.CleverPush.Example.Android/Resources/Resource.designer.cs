@@ -398,46 +398,49 @@ namespace Com.CleverPush.Example.Android
 			public const int common_google_signin_btn_text_light_normal_background = 2130968594;
 			
 			// aapt resource value: 0x7F040013
-			public const int googleg_disabled_color_18 = 2130968595;
+			public const int default_notification_icon = 2130968595;
 			
 			// aapt resource value: 0x7F040014
-			public const int googleg_standard_color_18 = 2130968596;
+			public const int googleg_disabled_color_18 = 2130968596;
 			
 			// aapt resource value: 0x7F040015
-			public const int notification_action_background = 2130968597;
+			public const int googleg_standard_color_18 = 2130968597;
 			
 			// aapt resource value: 0x7F040016
-			public const int notification_bg = 2130968598;
+			public const int notification_action_background = 2130968598;
 			
 			// aapt resource value: 0x7F040017
-			public const int notification_bg_low = 2130968599;
+			public const int notification_bg = 2130968599;
 			
 			// aapt resource value: 0x7F040018
-			public const int notification_bg_low_normal = 2130968600;
+			public const int notification_bg_low = 2130968600;
 			
 			// aapt resource value: 0x7F040019
-			public const int notification_bg_low_pressed = 2130968601;
+			public const int notification_bg_low_normal = 2130968601;
 			
 			// aapt resource value: 0x7F04001A
-			public const int notification_bg_normal = 2130968602;
+			public const int notification_bg_low_pressed = 2130968602;
 			
 			// aapt resource value: 0x7F04001B
-			public const int notification_bg_normal_pressed = 2130968603;
+			public const int notification_bg_normal = 2130968603;
 			
 			// aapt resource value: 0x7F04001C
-			public const int notification_icon_background = 2130968604;
+			public const int notification_bg_normal_pressed = 2130968604;
 			
 			// aapt resource value: 0x7F04001D
-			public const int notification_template_icon_bg = 2130968605;
+			public const int notification_icon_background = 2130968605;
 			
 			// aapt resource value: 0x7F04001E
-			public const int notification_template_icon_low_bg = 2130968606;
+			public const int notification_template_icon_bg = 2130968606;
 			
 			// aapt resource value: 0x7F04001F
-			public const int notification_tile_bg = 2130968607;
+			public const int notification_template_icon_low_bg = 2130968607;
 			
 			// aapt resource value: 0x7F040020
-			public const int notify_panel_notification_icon_bg = 2130968608;
+			public const int notification_tile_bg = 2130968608;
+			
+			// aapt resource value: 0x7F040021
+			public const int notify_panel_notification_icon_bg = 2130968609;
 			
 			static Drawable()
 			{
@@ -492,139 +495,151 @@ namespace Com.CleverPush.Example.Android
 			public const int bottom = 2131034124;
 			
 			// aapt resource value: 0x7F05000D
-			public const int cancel_action = 2131034125;
+			public const int btnClose = 2131034125;
 			
 			// aapt resource value: 0x7F05000E
-			public const int center = 2131034126;
+			public const int cancel_action = 2131034126;
 			
 			// aapt resource value: 0x7F05000F
-			public const int center_horizontal = 2131034127;
+			public const int center = 2131034127;
 			
 			// aapt resource value: 0x7F050010
-			public const int center_vertical = 2131034128;
+			public const int center_horizontal = 2131034128;
 			
 			// aapt resource value: 0x7F050011
-			public const int chronometer = 2131034129;
+			public const int center_vertical = 2131034129;
 			
 			// aapt resource value: 0x7F050012
-			public const int clip_horizontal = 2131034130;
+			public const int chronometer = 2131034130;
 			
 			// aapt resource value: 0x7F050013
-			public const int clip_vertical = 2131034131;
+			public const int clip_horizontal = 2131034131;
 			
 			// aapt resource value: 0x7F050014
-			public const int dark = 2131034132;
+			public const int clip_vertical = 2131034132;
 			
 			// aapt resource value: 0x7F050015
-			public const int end = 2131034133;
+			public const int dark = 2131034133;
 			
 			// aapt resource value: 0x7F050016
-			public const int end_padder = 2131034134;
+			public const int end = 2131034134;
 			
 			// aapt resource value: 0x7F050017
-			public const int fill = 2131034135;
+			public const int end_padder = 2131034135;
 			
 			// aapt resource value: 0x7F050018
-			public const int fill_horizontal = 2131034136;
+			public const int fill = 2131034136;
 			
 			// aapt resource value: 0x7F050019
-			public const int fill_vertical = 2131034137;
+			public const int fill_horizontal = 2131034137;
 			
 			// aapt resource value: 0x7F05001A
-			public const int forever = 2131034138;
+			public const int fill_vertical = 2131034138;
 			
 			// aapt resource value: 0x7F05001B
-			public const int icon = 2131034139;
+			public const int forever = 2131034139;
 			
 			// aapt resource value: 0x7F05001C
-			public const int icon_group = 2131034140;
+			public const int icon = 2131034140;
 			
 			// aapt resource value: 0x7F05001D
-			public const int icon_only = 2131034141;
+			public const int icon_group = 2131034141;
 			
 			// aapt resource value: 0x7F05001E
-			public const int info = 2131034142;
+			public const int icon_only = 2131034142;
 			
 			// aapt resource value: 0x7F05001F
-			public const int italic = 2131034143;
+			public const int info = 2131034143;
 			
 			// aapt resource value: 0x7F050020
-			public const int left = 2131034144;
+			public const int italic = 2131034144;
 			
 			// aapt resource value: 0x7F050021
-			public const int light = 2131034145;
+			public const int left = 2131034145;
 			
 			// aapt resource value: 0x7F050022
-			public const int line1 = 2131034146;
+			public const int light = 2131034146;
 			
 			// aapt resource value: 0x7F050023
-			public const int line3 = 2131034147;
+			public const int line1 = 2131034147;
 			
 			// aapt resource value: 0x7F050024
-			public const int media_actions = 2131034148;
+			public const int line3 = 2131034148;
 			
 			// aapt resource value: 0x7F050025
-			public const int none = 2131034149;
+			public const int media_actions = 2131034149;
 			
 			// aapt resource value: 0x7F050026
-			public const int normal = 2131034150;
+			public const int none = 2131034150;
 			
 			// aapt resource value: 0x7F050027
-			public const int notification_background = 2131034151;
+			public const int normal = 2131034151;
 			
 			// aapt resource value: 0x7F050028
-			public const int notification_main_column = 2131034152;
+			public const int notification_background = 2131034152;
 			
 			// aapt resource value: 0x7F050029
-			public const int notification_main_column_container = 2131034153;
+			public const int notification_main_column = 2131034153;
 			
 			// aapt resource value: 0x7F05002A
-			public const int pushSwitch = 2131034154;
+			public const int notification_main_column_container = 2131034154;
 			
 			// aapt resource value: 0x7F05002B
-			public const int right = 2131034155;
+			public const int pushSwitch = 2131034155;
 			
 			// aapt resource value: 0x7F05002C
-			public const int right_icon = 2131034156;
+			public const int ratingBar = 2131034156;
 			
 			// aapt resource value: 0x7F05002D
-			public const int right_side = 2131034157;
+			public const int right = 2131034157;
 			
 			// aapt resource value: 0x7F05002E
-			public const int standard = 2131034158;
+			public const int right_icon = 2131034158;
 			
 			// aapt resource value: 0x7F05002F
-			public const int start = 2131034159;
+			public const int right_side = 2131034159;
 			
 			// aapt resource value: 0x7F050030
-			public const int status_bar_latest_event_content = 2131034160;
+			public const int standard = 2131034160;
 			
 			// aapt resource value: 0x7F050031
-			public const int tag_transition_group = 2131034161;
+			public const int start = 2131034161;
 			
 			// aapt resource value: 0x7F050032
-			public const int tag_unhandled_key_event_manager = 2131034162;
+			public const int status_bar_latest_event_content = 2131034162;
 			
 			// aapt resource value: 0x7F050033
-			public const int tag_unhandled_key_listeners = 2131034163;
+			public const int tag_transition_group = 2131034163;
 			
 			// aapt resource value: 0x7F050034
-			public const int text = 2131034164;
+			public const int tag_unhandled_key_event_manager = 2131034164;
 			
 			// aapt resource value: 0x7F050035
-			public const int text2 = 2131034165;
+			public const int tag_unhandled_key_listeners = 2131034165;
 			
 			// aapt resource value: 0x7F050036
-			public const int time = 2131034166;
+			public const int text = 2131034166;
 			
 			// aapt resource value: 0x7F050037
-			public const int title = 2131034167;
+			public const int text2 = 2131034167;
 			
 			// aapt resource value: 0x7F050038
-			public const int top = 2131034168;
+			public const int text_content = 2131034168;
 			
 			// aapt resource value: 0x7F050039
-			public const int wide = 2131034169;
+			public const int time = 2131034169;
+			
+			// aapt resource value: 0x7F05003A
+			public const int title = 2131034170;
+			
+			// aapt resource value: 0x7F05003B
+			public const int top = 2131034171;
+			
+			// aapt resource value: 0x7F05003C
+			public const int webView = 2131034172;
+			
+			// aapt resource value: 0x7F05003D
+			public const int wide = 2131034173;
 			
 			static Id()
 			{
@@ -662,52 +677,58 @@ namespace Com.CleverPush.Example.Android
 		{
 			
 			// aapt resource value: 0x7F070000
-			public const int Main = 2131165184;
+			public const int cleverpush_webview_dialog = 2131165184;
 			
 			// aapt resource value: 0x7F070001
-			public const int notification_action = 2131165185;
+			public const int Main = 2131165185;
 			
 			// aapt resource value: 0x7F070002
-			public const int notification_action_tombstone = 2131165186;
+			public const int notification_action = 2131165186;
 			
 			// aapt resource value: 0x7F070003
-			public const int notification_media_action = 2131165187;
+			public const int notification_action_tombstone = 2131165187;
 			
 			// aapt resource value: 0x7F070004
-			public const int notification_media_cancel_action = 2131165188;
+			public const int notification_media_action = 2131165188;
 			
 			// aapt resource value: 0x7F070005
-			public const int notification_template_big_media = 2131165189;
+			public const int notification_media_cancel_action = 2131165189;
 			
 			// aapt resource value: 0x7F070006
-			public const int notification_template_big_media_custom = 2131165190;
+			public const int notification_template_big_media = 2131165190;
 			
 			// aapt resource value: 0x7F070007
-			public const int notification_template_big_media_narrow = 2131165191;
+			public const int notification_template_big_media_custom = 2131165191;
 			
 			// aapt resource value: 0x7F070008
-			public const int notification_template_big_media_narrow_custom = 2131165192;
+			public const int notification_template_big_media_narrow = 2131165192;
 			
 			// aapt resource value: 0x7F070009
-			public const int notification_template_custom_big = 2131165193;
+			public const int notification_template_big_media_narrow_custom = 2131165193;
 			
 			// aapt resource value: 0x7F07000A
-			public const int notification_template_icon_group = 2131165194;
+			public const int notification_template_custom_big = 2131165194;
 			
 			// aapt resource value: 0x7F07000B
-			public const int notification_template_lines_media = 2131165195;
+			public const int notification_template_icon_group = 2131165195;
 			
 			// aapt resource value: 0x7F07000C
-			public const int notification_template_media = 2131165196;
+			public const int notification_template_lines_media = 2131165196;
 			
 			// aapt resource value: 0x7F07000D
-			public const int notification_template_media_custom = 2131165197;
+			public const int notification_template_media = 2131165197;
 			
 			// aapt resource value: 0x7F07000E
-			public const int notification_template_part_chronometer = 2131165198;
+			public const int notification_template_media_custom = 2131165198;
 			
 			// aapt resource value: 0x7F07000F
-			public const int notification_template_part_time = 2131165199;
+			public const int notification_template_part_chronometer = 2131165199;
+			
+			// aapt resource value: 0x7F070010
+			public const int notification_template_part_time = 2131165200;
+			
+			// aapt resource value: 0x7F070011
+			public const int stars = 2131165201;
 			
 			static Layout()
 			{

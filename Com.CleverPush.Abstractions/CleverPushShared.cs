@@ -16,8 +16,9 @@ namespace Com.CleverPush.Abstractions
 
       public abstract void Subscribe();
 	  public abstract void Unsubscribe();
+		public abstract void ShowTopicsDialog();
 
-      public XamarinBuilder builder;
+		public XamarinBuilder builder;
 
       public abstract void InitPlatform();
 
