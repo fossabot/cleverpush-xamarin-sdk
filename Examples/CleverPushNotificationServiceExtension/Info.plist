@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>CleverPushNotificationServiceExtension</string>
 	<key>CFBundleIdentifier</key>
-	<string>cleverPush.example.CleverPushNotificationServiceExtension</string>
+	<string>com.cleverpush.cleverpush-example-ios.CleverPushNotificationServiceExtension</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleInfoDictionaryVersion</key>
