@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: deploy nuGet package
+  image: microsoft/dotnet:2.0-sdk
+  pull: if-not-exists
+  commands:
+  - nuget pack
+
+trigger:
+  branch:
+  - CP-1965_ci-deployment
