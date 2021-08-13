@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: deploy nuGet package
-  image: microsoft/dotnet:2.0-sdk
+  image: mcr.microsoft.com/dotnet/sdk:5.0
   pull: if-not-exists
   commands:
   - dotnet restore
