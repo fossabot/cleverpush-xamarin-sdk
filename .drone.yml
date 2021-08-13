@@ -8,9 +8,7 @@ steps:
   pull: if-not-exists
   commands:
   - dotnet restore
-  - dotnet build
-  - dotnet pack
-  - dotnet nuget push
+  - msbuild
 
 trigger:
   branch:
