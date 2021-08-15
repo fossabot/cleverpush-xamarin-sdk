@@ -5,37 +5,36 @@ using Com.CleverPush.Abstractions;
 
 namespace Com.CleverPush
 {
-    public class ChannelTagsListener : Java.Lang.Object, Android.IChannelTagsListener
+    public class ChannelAttributesListener : Java.Lang.Object, Android.IChannelAttributesListener
     {
-        readonly Abstractions.ChannelTagsListener _ready;
+        readonly Abstractions.ChannelAttributesListener _ready;
 
-        public ChannelTagsListener(Abstractions.ChannelTagsListener ready) => _ready = ready;
+        public ChannelAttributesListener(Abstractions.ChannelAttributesListener ready) => _ready = ready;
 
-
-        public void Ready(ICollection<Android.ChannelTag> tags)
+        public void Ready(ICollection<Android.CustomAttribute> attributes)
         {
-            _ready?.Invoke(CPChannelTagsToNative(tags));
+            _ready?.Invoke(CPChannelAttributesToNative(attributes));
         }
 
-        public static ICollection<CPChannelTag> CPChannelTagsToNative(ICollection<Android.ChannelTag> tags)
+        public static ICollection<CPCustomAttribute> CPChannelAttributesToNative(ICollection<Android.CustomAttribute> attributes)
         {
-            List<CPChannelTag> list = new List<CPChannelTag>();
-            foreach (var tag in tags)
+            List<CPCustomAttribute> list = new List<CPCustomAttribute>();
+            foreach (var attribute in attributes)
             {
-                list.Add(CPChannelTagToNative(tag));
+                list.Add(CPChannelAttributeToNative(attribute));
             }
 
             return list;
         }
 
-        public static CPChannelTag CPChannelTagToNative(Android.ChannelTag tag)
+        public static CPCustomAttribute CPChannelAttributeToNative(Android.CustomAttribute attribute)
         {
-            var newTag = new CPChannelTag();
+            var newAttribute = new CPCustomAttribute();
 
-            newTag.id = tag.Id;
-            newTag.name = tag.Name;
+            newAttribute.id = attribute.Id;
+            newAttribute.name = attribute.Name;
 
-			return newTag;
+            return newAttribute;
         }
     }
 }

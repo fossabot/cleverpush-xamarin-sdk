@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Com.CleverPush.Abstractions
 {
-    public class CPChannelTopic
+    public class CPCustomAttribute
     {
 		public string id;
 		public string name;

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,15 +49,17 @@
     <Compile Include="..\Com.CleverPush\CleverPush.cs">
       <Link>CleverPush.cs</Link>
     </Compile>
+    <Compile Include="ChannelTagsListener.cs" />
+    <Compile Include="ChannelTopicsListener.cs" />
+    <Compile Include="ChannelAttributesListener.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CleverPush.Android.Binding\CleverPush.Android.Binding.csproj">
-      <Project>{9144f592-91b9-4aca-bc3c-d771f8319996}</Project>
-      <Name>CleverPush.Android.Binding</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Com.CleverPush.Abstractions\Com.CleverPush.Abstractions.csproj">
       <Project>{2fd9d18f-3985-4b2c-b74b-c533514a6108}</Project>
       <Name>Com.CleverPush.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CleverPush.Android.Binding\CleverPush.Android.Binding.csproj">
+      <Name>CleverPush.Android.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

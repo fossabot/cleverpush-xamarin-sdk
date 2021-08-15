@@ -47,13 +47,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CleverPush.iOS.Binding\CleverPush.iOS.Binding.csproj">
-      <Project>{967EAABD-4A79-4762-9848-0D5530AA1FA5}</Project>
-      <Name>CleverPush.iOS.Binding</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Com.CleverPush.Abstractions\Com.CleverPush.Abstractions.csproj">
       <Project>{2fd9d18f-3985-4b2c-b74b-c533514a6108}</Project>
       <Name>Com.CleverPush.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CleverPush.iOS.Binding\CleverPush.iOS.Binding.csproj">
+      <Name>CleverPush.iOS.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

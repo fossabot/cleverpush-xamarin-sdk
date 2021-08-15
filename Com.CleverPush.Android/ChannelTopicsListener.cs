@@ -5,37 +5,36 @@ using Com.CleverPush.Abstractions;
 
 namespace Com.CleverPush
 {
-    public class ChannelTagsListener : Java.Lang.Object, Android.IChannelTagsListener
+    public class ChannelTopicsListener : Java.Lang.Object, Android.IChannelTopicsListener
     {
-        readonly Abstractions.ChannelTagsListener _ready;
+        readonly Abstractions.ChannelTopicsListener _ready;
 
-        public ChannelTagsListener(Abstractions.ChannelTagsListener ready) => _ready = ready;
+        public ChannelTopicsListener(Abstractions.ChannelTopicsListener ready) => _ready = ready;
 
-
-        public void Ready(ICollection<Android.ChannelTag> tags)
+        public void Ready(ICollection<Android.ChannelTopic> topics)
         {
-            _ready?.Invoke(CPChannelTagsToNative(tags));
+            _ready?.Invoke(CPChannelTopicsToNative(topics));
         }
 
-        public static ICollection<CPChannelTag> CPChannelTagsToNative(ICollection<Android.ChannelTag> tags)
+        public static ICollection<CPChannelTopic> CPChannelTopicsToNative(ICollection<Android.ChannelTopic> topics)
         {
-            List<CPChannelTag> list = new List<CPChannelTag>();
-            foreach (var tag in tags)
+            List<CPChannelTopic> list = new List<CPChannelTopic>();
+            foreach (var topic in topics)
             {
-                list.Add(CPChannelTagToNative(tag));
+                list.Add(CPChannelTopicToNative(topic));
             }
 
             return list;
         }
 
-        public static CPChannelTag CPChannelTagToNative(Android.ChannelTag tag)
+        public static CPChannelTopic CPChannelTopicToNative(Android.ChannelTopic topic)
         {
-            var newTag = new CPChannelTag();
+            var newTopic = new CPChannelTopic();
 
-            newTag.id = tag.Id;
-            newTag.name = tag.Name;
+            newTopic.id = topic.Id;
+            newTopic.name = topic.Name;
 
-			return newTag;
+			return newTopic;
         }
     }
 }

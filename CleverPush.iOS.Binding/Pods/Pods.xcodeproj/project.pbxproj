@@ -7,61 +7,85 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		456D46163D1BDC8F50A0A06E45787214 /* CleverPush */ = {
+		08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 365383B33EC73E096C337C806970C499 /* Build configuration list for PBXAggregateTarget "CleverPush" */;
+			buildConfigurationList = EE6A6895B2EB1324CE400F272A5E9697 /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */;
 			buildPhases = (
 			);
 			dependencies = (
 			);
-			name = CleverPush;
+			name = "CleverPush-framework";
+		};
+		A78C5148CBF8E4EE9D1F7AE536795C7F /* CleverPush-library */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5D05AED9AAA8CF82F049444EBE32A818 /* Build configuration list for PBXAggregateTarget "CleverPush-library" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "CleverPush-library";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		11BE839561E1ED253C57A258CD3D8838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3F3A50A2B44DD4A2648389BEDE2D72E9 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */; };
-		A28EE150184B28027D914F746C2C4390 /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0208D7759013051C36AC917960F5EA7F /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050505FCDC600780EE090FA20E9A1C85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F54D92E24BF98EFABA19A496EC1499F8 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22FB036803F709CE9C23301A537BB2C9 /* PBXContainerItemProxy */ = {
+		E1EB67BE4C6EA1FA88E80462694212CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 456D46163D1BDC8F50A0A06E45787214;
-			remoteInfo = CleverPush;
+			remoteGlobalIDString = 08FD6041424453E8E604531E2E4D1990;
+			remoteInfo = "CleverPush-framework";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjectiveSharpieIntegration-dummy.m"; sourceTree = "<group>"; };
-		16DA5CEEF5CEC281942150B4FDC5AA3B /* CleverPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverPush.framework; path = CleverPush_iOS_SDK/Framework/CleverPush.framework; sourceTree = "<group>"; };
 		2AA64804CC5B06B1A200D782F1FC336C /* Pods-ObjectiveSharpieIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjectiveSharpieIntegration-umbrella.h"; sourceTree = "<group>"; };
+		4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.release.xcconfig"; path = "../CleverPush-library/CleverPush-library.release.xcconfig"; sourceTree = "<group>"; };
 		4AED1DE3D5C713B670D21601C83670BE /* Pods-ObjectiveSharpieIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
+		4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.debug.xcconfig"; path = "../CleverPush-library/CleverPush-library.debug.xcconfig"; sourceTree = "<group>"; };
 		4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		83E2EA769B52A806BF1A04A6971769D7 /* Pods-ObjectiveSharpieIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A96629C05E383ED082208E0E1B30C595 /* Pods_ObjectiveSharpieIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjectiveSharpieIntegration.framework; path = "Pods-ObjectiveSharpieIntegration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABCC50357F5743C9997E573B00A75EFB /* CleverPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CleverPush.xcconfig; sourceTree = "<group>"; };
+		AC983179753CB6BF7B6D754307165B5A /* CleverPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverPush.framework; path = CleverPush/Framework/CleverPush.framework; sourceTree = "<group>"; };
 		BDB9A61AF13970A52AF37EF54ED17011 /* Pods-ObjectiveSharpieIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjectiveSharpieIntegration.modulemap"; sourceTree = "<group>"; };
+		C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		31D89AE38AC7C5F5F5F8A4FEE3FFB865 /* Frameworks */ = {
+		42689578C4ADE1A8D3E082DFB7491DF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BE839561E1ED253C57A258CD3D8838 /* Foundation.framework in Frameworks */,
+				050505FCDC600780EE090FA20E9A1C85 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBBCF456F4895D8619AD5C9B21CC4FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */,
+				D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */,
+				4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */,
+				4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CleverPush-framework";
+			sourceTree = "<group>";
+		};
 		2720C44A4835D2D0205DF874D911C738 /* Pods-ObjectiveSharpieIntegration */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,13 +102,12 @@
 			path = "Target Support Files/Pods-ObjectiveSharpieIntegration";
 			sourceTree = "<group>";
 		};
-		4EF94C35EFA1D2D234D861CFBD216060 /* Support Files */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ABCC50357F5743C9997E573B00A75EFB /* CleverPush.xcconfig */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CleverPush";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		591B138F6A4056A0B2F4B166317EC73A /* Targets Support Files */ = {
@@ -98,15 +121,15 @@
 		90A80D9999548252768A36CF348FC636 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F9657B214019A4CFDE96A2A398690B4A /* CleverPush */,
+				E2438DB61F8E96EE49AF50A57DEFAE22 /* CleverPush */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BA2BAB35D36A7DFC4BC38AB30574D666 /* Frameworks */ = {
+		A6F10E29A4171987652712CC1511B862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16DA5CEEF5CEC281942150B4FDC5AA3B /* CleverPush.framework */,
+				AC983179753CB6BF7B6D754307165B5A /* CleverPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,14 +140,6 @@
 				A96629C05E383ED082208E0E1B30C595 /* Pods_ObjectiveSharpieIntegration.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -141,16 +156,16 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F9657B214019A4CFDE96A2A398690B4A /* CleverPush */ = {
+		E2438DB61F8E96EE49AF50A57DEFAE22 /* CleverPush */ = {
 			isa = PBXGroup;
 			children = (
-				BA2BAB35D36A7DFC4BC38AB30574D666 /* Frameworks */,
-				4EF94C35EFA1D2D234D861CFBD216060 /* Support Files */,
+				A6F10E29A4171987652712CC1511B862 /* Frameworks */,
+				0EBBCF456F4895D8619AD5C9B21CC4FB /* Support Files */,
 			);
 			name = CleverPush;
 			path = CleverPush;
@@ -159,11 +174,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4BC31C3994B3AB82ECE9F84A3DA5278D /* Headers */ = {
+		A4136395F6DB6C07A7ECD4E1D0FBC0BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28EE150184B28027D914F746C2C4390 /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */,
+				0208D7759013051C36AC917960F5EA7F /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,17 +187,17 @@
 /* Begin PBXNativeTarget section */
 		2FD48F3F449C04CCB410AB52AC6554AF /* Pods-ObjectiveSharpieIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39970298DABB7B19F70EC1FE9E8C258B /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */;
+			buildConfigurationList = BCA80B672FC484974BACE2C6943E4344 /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */;
 			buildPhases = (
-				4BC31C3994B3AB82ECE9F84A3DA5278D /* Headers */,
-				8F5393FDCB226A593B6D8BFF108F5C79 /* Sources */,
-				31D89AE38AC7C5F5F5F8A4FEE3FFB865 /* Frameworks */,
-				67A1BEFC62B69F30665AACEB325C37AE /* Resources */,
+				A4136395F6DB6C07A7ECD4E1D0FBC0BB /* Headers */,
+				3D26E08421429DDD0AA477C7C3B02C7A /* Sources */,
+				42689578C4ADE1A8D3E082DFB7491DF9 /* Frameworks */,
+				DE50F99BE6FD01099D0296A2D16D0506 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AFB2D53F63796D81CA0BCBDF90CB96BD /* PBXTargetDependency */,
+				1AB2A6FFCF50345241CDE02E82FCF94F /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjectiveSharpieIntegration";
 			productName = "Pods-ObjectiveSharpieIntegration";
@@ -204,20 +219,22 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = BB8FF3BBB47F8396C7370D4AEFEF9647 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				456D46163D1BDC8F50A0A06E45787214 /* CleverPush */,
+				08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */,
+				A78C5148CBF8E4EE9D1F7AE536795C7F /* CleverPush-library */,
 				2FD48F3F449C04CCB410AB52AC6554AF /* Pods-ObjectiveSharpieIntegration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		67A1BEFC62B69F30665AACEB325C37AE /* Resources */ = {
+		DE50F99BE6FD01099D0296A2D16D0506 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,65 +244,77 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F5393FDCB226A593B6D8BFF108F5C79 /* Sources */ = {
+		3D26E08421429DDD0AA477C7C3B02C7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3A50A2B44DD4A2648389BEDE2D72E9 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */,
+				F54D92E24BF98EFABA19A496EC1499F8 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AFB2D53F63796D81CA0BCBDF90CB96BD /* PBXTargetDependency */ = {
+		1AB2A6FFCF50345241CDE02E82FCF94F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CleverPush;
-			target = 456D46163D1BDC8F50A0A06E45787214 /* CleverPush */;
-			targetProxy = 22FB036803F709CE9C23301A537BB2C9 /* PBXContainerItemProxy */;
+			name = "CleverPush-framework";
+			target = 08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */;
+			targetProxy = E1EB67BE4C6EA1FA88E80462694212CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06F5C0AAB6FC1D6B02A7D4436E5FAEB0 /* Debug */ = {
+		2F0020C9273967E476BFC1853822F9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */;
+			baseConfigurationReference = 4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+		429CB46FE98026AF0CF48CA2E372B462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C7BB85A40ACF59B090B66900C8FC63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -308,131 +337,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		1C5885FC5C6D1D63205DE7167E867087 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABCC50357F5743C9997E573B00A75EFB /* CleverPush.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		281988A2FE791CDC76CCBD2EA96DC6FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABCC50357F5743C9997E573B00A75EFB /* CleverPush.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		935A51D001A2B96722DE17866A887D57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -471,32 +376,186 @@
 			};
 			name = Debug;
 		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E9151B9E745201673ECA544551C4FB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9EC025F8CF89BBEB0697986F4264D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF982A23E656BCF846B85915DA0A5D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		365383B33EC73E096C337C806970C499 /* Build configuration list for PBXAggregateTarget "CleverPush" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C5885FC5C6D1D63205DE7167E867087 /* Debug */,
-				281988A2FE791CDC76CCBD2EA96DC6FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		39970298DABB7B19F70EC1FE9E8C258B /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06F5C0AAB6FC1D6B02A7D4436E5FAEB0 /* Debug */,
-				935A51D001A2B96722DE17866A887D57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
-				1422B121EAEAEA11307496903FA623C6 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D05AED9AAA8CF82F049444EBE32A818 /* Build configuration list for PBXAggregateTarget "CleverPush-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0020C9273967E476BFC1853822F9EA /* Debug */,
+				54C7BB85A40ACF59B090B66900C8FC63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA80B672FC484974BACE2C6943E4344 /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EC025F8CF89BBEB0697986F4264D00 /* Debug */,
+				E9151B9E745201673ECA544551C4FB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6A6895B2EB1324CE400F272A5E9697 /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF982A23E656BCF846B85915DA0A5D2C /* Debug */,
+				429CB46FE98026AF0CF48CA2E372B462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

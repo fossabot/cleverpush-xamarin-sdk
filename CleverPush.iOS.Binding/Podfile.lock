@@ -1,16 +1,16 @@
 PODS:
-  - CleverPush (0.1.11)
+  - CleverPush (1.12.0)
 
 DEPENDENCIES:
   - CleverPush
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - CleverPush
 
 SPEC CHECKSUMS:
-  CleverPush: 7bd1ba500d933b5b2660d17a0eb8fa891c772a13
+  CleverPush: ba794ec600e50db2a520410eac0e9b9d39d6c24a
 
 PODFILE CHECKSUM: 39c9a5163bec5f6e8da570fb8e1fd31463e0acf8
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.1

@@ -6,7 +6,7 @@ namespace Com.CleverPush.Abstractions
     public class CPNotificationOpenedResult
     {
         public CPNotification notification;
-		public Dictionary<string, object> subscription;
+		public CPSubscription subscription;
 		public Dictionary<string, object> payload;
 	}
 }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace Com.CleverPush.Abstractions
 {
-    public class CPNotification
-    {
+	public class CPNotification
+	{
 		public string id;
 		public string title;
 		public string text;

@@ -11,9 +11,9 @@ namespace Com.CleverPush
 
 		public SubscribedListener(Abstractions.SubscribedListener subscribed) => _subscribed = subscribed;
 
-        public void Subscribed(string p0)
+        public void Subscribed(string subscriptionId)
         {
-			_subscribed?.Invoke(p0);
+			_subscribed?.Invoke(subscriptionId);
         }
     }
 }

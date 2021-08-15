@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+CleverPush-framework in Pods
+Pods-ObjectiveSharpieIntegration in Pods, depends on:
+CleverPush-framework in Pods (explicit)

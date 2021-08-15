@@ -1,45 +1,40 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Com.CleverPush.Abstractions;
 
 namespace Com.CleverPush
 {
-    public class NotificationOpenedHandler : Java.Lang.Object, Android.INotificationOpenedListener
+    public class ChannelTagsListener : Java.Lang.Object, Android.IChannelTagsListener
     {
-        public void NotificationOpened(Android.NotificationOpenedResult result)
+        readonly Abstractions.ChannelTagsListener _ready;
+
+        public ChannelTagsListener(Abstractions.ChannelTagsListener ready) => _ready = ready;
+
+        public void Ready(ICollection<Android.ChannelTag> tags)
         {
-            (CleverPush.Current as CleverPushImplementation).OnNotificationOpened(CPNotificationOpenedResultToNative(result));
+            _ready?.Invoke(CPChannelTagsToNative(tags));
         }
 
-        public static CPNotificationOpenedResult CPNotificationOpenedResultToNative(Android.NotificationOpenedResult result)
+        public static ICollection<CPChannelTag> CPChannelTagsToNative(ICollection<Android.ChannelTag> tags)
         {
-            var openresult = new CPNotificationOpenedResult();
-            openresult.notification = CPNotificationToNative(result.Notification);
-
-            return openresult;
-        }
-
-        public static CPNotification CPNotificationToNative(Android.Notification notif)
-        {
-            var notification = new CPNotification();
-
-            notification.customData = new Dictionary<string, object>();
-            if (notif.CustomData != null)
+            List<CPChannelTag> list = new List<CPChannelTag>();
+            foreach (var tag in tags)
             {
-				foreach (var item in (Dictionary<string, object>) notif.CustomData)
-				{
-					notification.customData.Add(item.Key, item.Value);
-				}
+                list.Add(CPChannelTagToNative(tag));
             }
 
-			notification.id = notif.Id;
-			notification.title = notif.Title;
-			notification.text = notif.Text;
-			notification.url = notif.Url;
-            notification.mediaUrl = notif.MediaUrl;
-			notification.iconUrl = notif.IconUrl;
+            return list;
+        }
 
-			return notification;
+        public static CPChannelTag CPChannelTagToNative(Android.ChannelTag tag)
+        {
+            var newTag = new CPChannelTag();
+
+            newTag.id = tag.Id;
+            newTag.name = tag.Name;
+
+            return newTag;
         }
     }
 }
