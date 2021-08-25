@@ -25,7 +25,6 @@ namespace Com.CleverPush.Example.Shared
 				  Debug.WriteLine("CleverPush HandleSubscribed: {0}", subscriptionId);
 			  })
 			  .EndInit();
-
 		}
 
 		public static void Subscribe()

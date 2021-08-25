@@ -30,6 +30,6 @@ namespace Com.CleverPush.Example.Android
 				 SharedPush.Unsubscribe();
 			 }
          };
-      }
+		}
    }
 }
