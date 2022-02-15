@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Com.CleverPush</RootNamespace>
     <AssemblyName>CleverPush</AssemblyName>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidTlsProvider>

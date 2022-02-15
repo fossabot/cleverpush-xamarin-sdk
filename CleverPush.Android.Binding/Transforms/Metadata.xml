@@ -6,6 +6,8 @@
 	
 	<remove-node path="/api/package[@name='com.cleverpush.banner']" />
 	<remove-node path="/api/package[@name='com.cleverpush.stories']" />
+	<remove-node path="/api/package[@name='com.cleverpush.inbox']" />
+	<remove-node path="/api/package[@name='com.cleverpush.listener']/interface[@name='WebViewClientListener']" />
 	<remove-node path="/api/package[@name='com.cleverpush.mapper']/class[@name='SubscriptionToListMapper']" />
 	<remove-node path="/api/package[@name='com.cleverpush']/class[@name='CleverPush']/implements[@name='androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback']" />
 

@@ -33,9 +33,9 @@ namespace Com.CleverPush
 			Android.CleverPush.GetInstance(Application.Context).ShowTopicsDialog();
 		}
 
-		public void ShowTopicsDialog(Context context)
+		public void ShowTopicsDialog(Activity activity)
 		{
-			Android.CleverPush.GetInstance(Application.Context).ShowTopicsDialog(context);
+			Android.CleverPush.GetInstance(Application.Context).ShowTopicsDialog(activity);
 		}
 
 		public override void SetSubscriptionTopics(string[] topicIds) {
