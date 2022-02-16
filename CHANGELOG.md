@@ -1,3 +1,6 @@
+# 1.2.3
+* Fixed build issue for Android binding
+
 # 1.2.2
 * Updated native Android SDK to 1.20.0
 
