@@ -1,5 +1,5 @@
 PODS:
-  - CleverPush (1.12.0)
+  - CleverPush (1.16.3)
 
 DEPENDENCIES:
   - CleverPush
@@ -9,8 +9,8 @@ SPEC REPOS:
     - CleverPush
 
 SPEC CHECKSUMS:
-  CleverPush: ba794ec600e50db2a520410eac0e9b9d39d6c24a
+  CleverPush: ce82cd83aa9e1f678375a380d0165d24156d68de
 
 PODFILE CHECKSUM: 39c9a5163bec5f6e8da570fb8e1fd31463e0acf8
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

@@ -41,7 +41,7 @@
 	<key>CleverPush_require_privacy_consent</key>
 	<true/>
 	<key>CFBundleIdentifier</key>
-	<string>com.cleverpush.cleverpush-chat-example</string>
+	<string>com.cleverpush.cleverpush-example-ios</string>
 	<key>CFBundleDisplayName</key>
 	<string>CleverPushXamarinExample</string>
 </dict>

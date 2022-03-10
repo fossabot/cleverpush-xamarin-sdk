@@ -12,3 +12,17 @@
 2. Build iOS/Android Binding projects
 3. Switch back to Debug Mode
 4. Run Example projects
+
+
+## Update iOS SDK
+
+Update Binding:
+```
+cd CleverPush.iOS.Binding
+sharpie pod bind -n Com.CleverPush.iOS
+
+```
+Convert XIB to NIB files:
+```
+find . -name "*.xib" -type f | awk '{sub(/.xib/,"");print}' | xargs -I % ibtool --compile %.nib %.xib
+```

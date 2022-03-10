@@ -54,4 +54,13 @@
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CPHTMLBlockCell.nib" />
+    <BundleResource Include="Resources\CPImageBlockCell.nib" />
+    <BundleResource Include="Resources\CPInboxCell.nib" />
+    <BundleResource Include="Resources\CPTopicDialogCell.nib" />
+    <BundleResource Include="Resources\CPAppBannerViewController.nib" />
+    <BundleResource Include="Resources\CPButtonBlockCell.nib" />
+    <BundleResource Include="Resources\CPTextBlockCell.nib" />
+  </ItemGroup>
 </Project>

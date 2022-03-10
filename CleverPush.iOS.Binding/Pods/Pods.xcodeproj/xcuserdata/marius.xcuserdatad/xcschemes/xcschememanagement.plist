@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CleverPush-framework-CleverPushResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CleverPush-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CleverPush-library-CleverPushResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

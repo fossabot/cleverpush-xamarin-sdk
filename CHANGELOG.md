@@ -1,3 +1,7 @@
+# 1.3.0
+* Fixed NotificationOpened/Received handlers for Android
+* Updated native Android + iOS SDKs
+
 # 1.2.3
 * Fixed build issue for Android binding
 

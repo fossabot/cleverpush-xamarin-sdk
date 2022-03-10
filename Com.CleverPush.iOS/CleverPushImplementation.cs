@@ -81,7 +81,7 @@ namespace Com.CleverPush
 
 		public void Init(string channelId)
 		{
-			iOS.CleverPush.InitWithLaunchOptions(new NSDictionary(), channelId, NotificationOpenedListener, SubscribedListener);
+			iOS.CleverPush.InitWithLaunchOptions(new NSDictionary(), channelId, NotificationOpenedListener, SubscribedListener, builder._autoRegister);
 		}
 
 		public void DidReceiveNotificationExtensionRequest(UNNotificationRequest request, UNMutableNotificationContent replacementContent)

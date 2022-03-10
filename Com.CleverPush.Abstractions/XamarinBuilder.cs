@@ -9,6 +9,7 @@ namespace Com.CleverPush.Abstractions
 		public NotificationReceivedListener _notificationReceivedDelegate;
 		public NotificationOpenedListener _notificationOpenedDelegate;
 		public SubscribedListener _subscribedDelegate;
+		public bool _autoRegister = true;
 		CleverPushShared mCleverPushShared;
 
 		internal XamarinBuilder(string channelId, CleverPushShared cleverPushShared)
@@ -32,6 +33,12 @@ namespace Com.CleverPush.Abstractions
 		public XamarinBuilder HandleSubscribed(SubscribedListener inSubscribedDelegate)
 		{
 			_subscribedDelegate = inSubscribedDelegate;
+			return this;
+		}
+
+		public XamarinBuilder AutoRegister(bool autoRegister)
+		{
+			_autoRegister = autoRegister;
 			return this;
 		}
 

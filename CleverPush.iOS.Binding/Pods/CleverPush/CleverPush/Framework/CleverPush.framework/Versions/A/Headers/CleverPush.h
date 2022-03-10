@@ -17,45 +17,15 @@
 #import "CPSubscription.h"
 #import "CPChannelTag.h"
 #import "CPChannelTopic.h"
-
-@interface CPNotificationReceivedResult : NSObject
-
-@property(readonly)NSDictionary* payload;
-@property(readonly)CPNotification* notification;
-@property(readonly)CPSubscription* subscription;
--(instancetype)initWithPayload:(NSDictionary *)payload;
-
-@end;
-
-@interface CPNotificationOpenedResult : NSObject
-
-@property(readonly)NSDictionary* payload;
-@property(readonly)CPNotification* notification;
-@property(readonly)CPSubscription* subscription;
-@property(readonly)NSString* action;
--(instancetype)initWithPayload:(NSDictionary *)payload action:(NSString*)action;
-
-@end;
-
-typedef void (^CPResultSuccessBlock)(NSDictionary* result);
-typedef void (^CPFailureBlock)(NSError* error);
-
-typedef void (^CPHandleSubscribedBlock)(NSString * result);
-
-typedef void (^CPHandleNotificationReceivedBlock)(CPNotificationReceivedResult* result);
-typedef void (^CPHandleNotificationOpenedBlock)(CPNotificationOpenedResult* result);
-
-typedef void (^CPResultSuccessBlock)(NSDictionary* result);
-typedef void (^CPFailureBlock)(NSError* error);
-
-typedef void (^CPAppBannerActionBlock)(CPAppBannerAction* action);
+#import "CleverPushInstance.h"
+#import "CPInboxView.h"
+#import "CleverPushUserDefaults.h"
 
 extern NSString * const kCPSettingsKeyInFocusDisplayOption;
 
 @interface CleverPush : NSObject
 
 extern NSString * const CLEVERPUSH_SDK_VERSION;
-
 
 #pragma mark - Initialise with launch options
 + (id)initWithLaunchOptions:(NSDictionary*)launchOptions channelId:(NSString*)channelId;
@@ -81,6 +51,7 @@ extern NSString * const CLEVERPUSH_SDK_VERSION;
 + (void)enableDevelopmentMode;
 + (void)subscribe;
 + (void)subscribe:(CPHandleSubscribedBlock)subscribedBlock;
++ (void)subscribe:(CPHandleSubscribedBlock)subscribedBlock failure:(CPFailureBlock)failureBlock;
 
 + (void)disableAppBanners;
 + (void)enableAppBanners;
@@ -93,7 +64,7 @@ extern NSString * const CLEVERPUSH_SDK_VERSION;
 + (void)handleNotificationOpened:(NSDictionary*)messageDict isActive:(BOOL)isActive actionIdentifier:(NSString*)actionIdentifier;
 + (void)handleNotificationReceived:(NSDictionary*)messageDict isActive:(BOOL)isActive;
 + (void)enqueueRequest:(NSURLRequest*)request onSuccess:(CPResultSuccessBlock)successBlock onFailure:(CPFailureBlock)failureBlock;
-+ (void)handleJSONNSURLResponse:(NSURLResponse*) response data:(NSData*) data error:(NSError*) error onSuccess:(CPResultSuccessBlock)successBlock onFailure:(CPFailureBlock)failureBlock;
++ (void)handleJSONNSURLResponse:(NSURLResponse*) response data:(NSData*) data error:(NSError*)error onSuccess:(CPResultSuccessBlock)successBlock onFailure:(CPFailureBlock)failureBlock;
 + (void)addSubscriptionTags:(NSArray*)tagIds callback:(void(^)(NSArray *))callback;
 + (void)addSubscriptionTag:(NSString*)tagId callback:(void(^)(NSString *))callback;
 + (void)addSubscriptionTags:(NSArray*)tagIds;
@@ -115,11 +86,15 @@ extern NSString * const CLEVERPUSH_SDK_VERSION;
 + (void)setSubscriptionTopics:(NSMutableArray *)topics;
 + (void)setBrandingColor:(UIColor *)color;
 + (void)setNormalTintColor:(UIColor *)color;
++ (UIColor*)getNormalTintColor;
 + (void)setChatBackgroundColor:(UIColor *)color;
 + (void)setAutoClearBadge:(BOOL)autoClear;
 + (void)setIncrementBadge:(BOOL)increment;
++ (void)setShowNotificationsInForeground:(BOOL)show;
++ (void)setIgnoreDisabledNotificationPermission:(BOOL)ignore;
 + (void)addChatView:(CPChatView*)chatView;
 + (void)showTopicsDialog;
++ (void)showTopicDialogOnNewAdded;
 + (void)showTopicsDialog:(UIWindow *)targetWindow;
 + (void)getChannelConfig:(void(^)(NSDictionary *))callback;
 + (void)getSubscriptionId:(void(^)(NSString *))callback;
@@ -130,17 +105,24 @@ extern NSString * const CLEVERPUSH_SDK_VERSION;
 + (void)increaseSessionVisits;
 + (void)showAppBanner:(NSString*)bannerId;
 + (void)setAppBannerOpenedCallback:(CPAppBannerActionBlock)callback;
++ (void)getAppBanners:(NSString*)channelId callback:(void(^)(NSArray *))callback;
 + (void)triggerAppBannerEvent:(NSString *)key value:(NSString *)value;
 + (void)setApiEndpoint:(NSString*)apiEndpoint;
 + (void)updateBadge:(UNMutableNotificationContent*)replacementContent API_AVAILABLE(ios(10.0));
 + (void)addStoryView:(CPStoryView*)storyView;
 + (void)updateDeselectFlag:(BOOL)value;
++ (void)setOpenWebViewEnabled:(BOOL)opened;
++ (void)setUnsubscribeStatus:(BOOL)status;
 + (UIViewController*)topViewController;
++ (BOOL)hasSubscriptionTopic:(NSString*)topicId;
 
 + (NSArray*)getAvailableTags __attribute__((deprecated));
 + (NSArray*)getAvailableTopics __attribute__((deprecated));
 + (NSArray*)getSubscriptionTags;
-+ (NSArray*)getNotifications;
++ (NSArray<CPNotification*>*)getNotifications;
++ (void)getNotifications:(BOOL)combineWithApi callback:(void(^)(NSArray *))callback;
++ (void)getNotifications:(BOOL)combineWithApi limit:(int)limit skip:(int)skip callback:(void(^)(NSArray<CPNotification*>*))callback;
++ (void)removeNotification:(NSString*)notificationId;
 + (NSArray*)getSeenStories;
 + (NSMutableArray*)getSubscriptionTopics;
 
@@ -160,6 +142,7 @@ extern NSString * const CLEVERPUSH_SDK_VERSION;
 + (BOOL)handleSilentNotificationReceived:(UIApplication*)application UserInfo:(NSDictionary*)messageDict completionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 + (BOOL)hasSubscriptionTag:(NSString*)tagId;
 + (BOOL)getDeselectValue;
++ (BOOL)getUnsubscribeStatus;
 
 + (UNMutableNotificationContent*)didReceiveNotificationExtensionRequest:(UNNotificationRequest*)request withMutableNotificationContent:(UNMutableNotificationContent*)replacementContent API_AVAILABLE(ios(10.0));
 + (UNMutableNotificationContent*)serviceExtensionTimeWillExpireRequest:(UNNotificationRequest*)request withMutableNotificationContent:(UNMutableNotificationContent*)replacementContent API_AVAILABLE(ios(10.0));

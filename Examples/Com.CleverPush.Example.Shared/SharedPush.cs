@@ -11,7 +11,7 @@ namespace Com.CleverPush.Example.Shared
 	{
 		public static void Initialize()
 		{
-			CleverPush.Current.StartInit("odcpZ3GhnwiGWxCbC")
+			CleverPush.Current.StartInit("7R8nkAxtrY5wy5TsS")
 			   .HandleNotificationOpened((result) =>
 			   {
 				   Debug.WriteLine("CleverPush HandleNotificationOpened: {0}", result.notification.title);
@@ -25,6 +25,8 @@ namespace Com.CleverPush.Example.Shared
 				  Debug.WriteLine("CleverPush HandleSubscribed: {0}", subscriptionId);
 			  })
 			  .EndInit();
+
+			CleverPush.Current.ShowTopicsDialog();
 		}
 
 		public static void Subscribe()

@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+CleverPush-framework-CleverPushResources in Pods, no dependencies
+CleverPush-framework in Pods, depends on:
+CleverPush-framework-CleverPushResources in Pods (explicit)
+Pods-ObjectiveSharpieIntegration in Pods, depends on:
+CleverPush-framework in Pods (explicit)

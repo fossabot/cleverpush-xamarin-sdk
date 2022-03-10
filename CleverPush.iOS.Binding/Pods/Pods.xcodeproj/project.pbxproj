@@ -9,97 +9,153 @@
 /* Begin PBXAggregateTarget section */
 		08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = EE6A6895B2EB1324CE400F272A5E9697 /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */;
+			buildConfigurationList = 5CD8D07969ED5B1BBBD48D1A051C50EC /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */;
 			buildPhases = (
 			);
 			dependencies = (
+				5634CDC95024E3DBB9BF5DAF921FC7EF /* PBXTargetDependency */,
 			);
 			name = "CleverPush-framework";
 		};
 		A78C5148CBF8E4EE9D1F7AE536795C7F /* CleverPush-library */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5D05AED9AAA8CF82F049444EBE32A818 /* Build configuration list for PBXAggregateTarget "CleverPush-library" */;
+			buildConfigurationList = 39BF79D4BAF283552B994D46E94BE96D /* Build configuration list for PBXAggregateTarget "CleverPush-library" */;
 			buildPhases = (
 			);
 			dependencies = (
+				C683A8A3575C677048EFDF54DE707CB5 /* PBXTargetDependency */,
 			);
 			name = "CleverPush-library";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0208D7759013051C36AC917960F5EA7F /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		050505FCDC600780EE090FA20E9A1C85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F54D92E24BF98EFABA19A496EC1499F8 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */; };
+		0534FE98ACE086968B382E092417FCF7 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01623026534763F91E4FC199CB1305C4 /* Pods-ObjectiveSharpieIntegration-dummy.m */; };
+		0B7B4093A9311745E66A62DCEA01260B /* CPInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95CB8CD50F57CE43864114C4B723465A /* CPInboxCell.xib */; };
+		184C888EA65691B0F92AB4713E2BCCC5 /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE75983394EF52FCB49F29CCDD865AE7 /* Pods-ObjectiveSharpieIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FEBAD23C73846B6ED45D260BC31731B /* CPHTMLBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4685D9E90D91C542CE9AAA63569DB6F3 /* CPHTMLBlockCell.xib */; };
+		25D0D07380D5C0B686DE0BD44851D423 /* CPTopicDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A08BCCC6A1EEDE68839A1A86B115A95 /* CPTopicDialogCell.xib */; };
+		293D4F31AF51A484005870C82C8DCC36 /* CPImageBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A54445B55AA64AC6B253AAE38F8855D /* CPImageBlockCell.xib */; };
+		41A2970C2F6C05943B7B23AC71948F4C /* CPBannerCardContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCAE071A3A42F93BF76DD5D3964AD8B /* CPBannerCardContainer.xib */; };
+		47D2ACC40A4A60865FA9593C2CC6F0BB /* CPTopicDialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A08BCCC6A1EEDE68839A1A86B115A95 /* CPTopicDialogCell.xib */; };
+		4885F3C3B51B3452E2D263506CD163EC /* CPAppBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88407222D4F4756E9B8C06E3C11AAE87 /* CPAppBannerViewController.xib */; };
+		4C093449AB8A97B1E38F7998B07FC7B7 /* CPImageBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A54445B55AA64AC6B253AAE38F8855D /* CPImageBlockCell.xib */; };
+		6CF289064C38EE9101E2E89398D4FFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6EF73C0C29C3B31BF7D46A2EAB59EB77 /* CPHTMLBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4685D9E90D91C542CE9AAA63569DB6F3 /* CPHTMLBlockCell.xib */; };
+		7407901B600FB034DA8B33380F63524B /* CPAppBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88407222D4F4756E9B8C06E3C11AAE87 /* CPAppBannerViewController.xib */; };
+		A4F74F7A9A9DAE9DB19226B13E49F02A /* CPInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95CB8CD50F57CE43864114C4B723465A /* CPInboxCell.xib */; };
+		A63293766C15D7CDADA69C1BC7AA968C /* CPButtonBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D363EFF69F780296600F606D23C328 /* CPButtonBlockCell.xib */; };
+		B288BEC205FDD52CEBD27D97604B74DE /* CPBannerCardContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCAE071A3A42F93BF76DD5D3964AD8B /* CPBannerCardContainer.xib */; };
+		C98F6B7DDAECFE62D80F7E87647123C6 /* CPTextBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0D15BF85CD3B9B57776B3C35A3618 /* CPTextBlockCell.xib */; };
+		D72F604909FC3233B572F9AC670BDB13 /* CPButtonBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D363EFF69F780296600F606D23C328 /* CPButtonBlockCell.xib */; };
+		FEDDA312C78EEB2A3AC07BA269C7E3E1 /* CPTextBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0D15BF85CD3B9B57776B3C35A3618 /* CPTextBlockCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E1EB67BE4C6EA1FA88E80462694212CE /* PBXContainerItemProxy */ = {
+		01D73FC89B9712925F5F9F0E7F8B9139 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 08FD6041424453E8E604531E2E4D1990;
 			remoteInfo = "CleverPush-framework";
 		};
+		3BE48DF08BCF6C48F35F36CD5AA4AD49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A0535BDD50951B00BB14428E661CFE;
+			remoteInfo = "CleverPush-library-CleverPushResources";
+		};
+		96C47122CD114E4725F27CB61F34DA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F216284CB1B6757CA797A22CB6EC05;
+			remoteInfo = "CleverPush-framework-CleverPushResources";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.debug.xcconfig"; sourceTree = "<group>"; };
-		09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjectiveSharpieIntegration-dummy.m"; sourceTree = "<group>"; };
-		2AA64804CC5B06B1A200D782F1FC336C /* Pods-ObjectiveSharpieIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjectiveSharpieIntegration-umbrella.h"; sourceTree = "<group>"; };
-		4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.release.xcconfig"; path = "../CleverPush-library/CleverPush-library.release.xcconfig"; sourceTree = "<group>"; };
-		4AED1DE3D5C713B670D21601C83670BE /* Pods-ObjectiveSharpieIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
-		4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.debug.xcconfig"; path = "../CleverPush-library/CleverPush-library.debug.xcconfig"; sourceTree = "<group>"; };
-		4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		01623026534763F91E4FC199CB1305C4 /* Pods-ObjectiveSharpieIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjectiveSharpieIntegration-dummy.m"; sourceTree = "<group>"; };
+		0FCAE071A3A42F93BF76DD5D3964AD8B /* CPBannerCardContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPBannerCardContainer.xib; path = CleverPush/CleverPush/Resources/CPBannerCardContainer.xib; sourceTree = "<group>"; };
+		1DCCB5697BC34A78F52BEC8E14A5A46C /* CleverPush-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.release.xcconfig"; path = "../CleverPush-library/CleverPush-library.release.xcconfig"; sourceTree = "<group>"; };
+		35ED4F7FF767D2C168628171EB73D04B /* CleverPush-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		389BACAC8A989556888C28AB15CA84B8 /* Pods-ObjectiveSharpieIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-Info.plist"; sourceTree = "<group>"; };
+		3D7CDBC0F1E9B6F22B71D29F3576C789 /* Pods-ObjectiveSharpieIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjectiveSharpieIntegration.modulemap"; sourceTree = "<group>"; };
+		4685D9E90D91C542CE9AAA63569DB6F3 /* CPHTMLBlockCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPHTMLBlockCell.xib; path = CleverPush/CleverPush/Resources/CPHTMLBlockCell.xib; sourceTree = "<group>"; };
+		4DB0D15BF85CD3B9B57776B3C35A3618 /* CPTextBlockCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPTextBlockCell.xib; path = CleverPush/CleverPush/Resources/CPTextBlockCell.xib; sourceTree = "<group>"; };
+		5CB18365FB718E336036D1B41B187561 /* CleverPush-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.release.xcconfig"; sourceTree = "<group>"; };
+		5D7AD61EF5B07266A03C5E882FAB15E5 /* Pods-ObjectiveSharpieIntegration-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjectiveSharpieIntegration-resources.sh"; sourceTree = "<group>"; };
+		6A54445B55AA64AC6B253AAE38F8855D /* CPImageBlockCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPImageBlockCell.xib; path = CleverPush/CleverPush/Resources/CPImageBlockCell.xib; sourceTree = "<group>"; };
+		72A1F8372B15DD5BD76E99ECF59B1539 /* ResourceBundle-CleverPushResources-CleverPush-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CleverPushResources-CleverPush-framework-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		83E2EA769B52A806BF1A04A6971769D7 /* Pods-ObjectiveSharpieIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-Info.plist"; sourceTree = "<group>"; };
+		7ADC0C34CE709541F9AD75A799DE9542 /* Pods-ObjectiveSharpieIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8077DE9AC679F49CBAF2FDA01E3201E5 /* ResourceBundle-CleverPushResources-CleverPush-library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-CleverPushResources-CleverPush-library-Info.plist"; path = "../CleverPush-library/ResourceBundle-CleverPushResources-CleverPush-library-Info.plist"; sourceTree = "<group>"; };
+		88407222D4F4756E9B8C06E3C11AAE87 /* CPAppBannerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPAppBannerViewController.xib; path = CleverPush/CleverPush/Resources/CPAppBannerViewController.xib; sourceTree = "<group>"; };
+		8A08BCCC6A1EEDE68839A1A86B115A95 /* CPTopicDialogCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPTopicDialogCell.xib; path = CleverPush/CleverPush/Resources/CPTopicDialogCell.xib; sourceTree = "<group>"; };
+		95CB8CD50F57CE43864114C4B723465A /* CPInboxCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPInboxCell.xib; path = CleverPush/CleverPush/Resources/CPInboxCell.xib; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A96629C05E383ED082208E0E1B30C595 /* Pods_ObjectiveSharpieIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjectiveSharpieIntegration.framework; path = "Pods-ObjectiveSharpieIntegration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC983179753CB6BF7B6D754307165B5A /* CleverPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverPush.framework; path = CleverPush/Framework/CleverPush.framework; sourceTree = "<group>"; };
-		BDB9A61AF13970A52AF37EF54ED17011 /* Pods-ObjectiveSharpieIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjectiveSharpieIntegration.modulemap"; sourceTree = "<group>"; };
-		C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CleverPush-framework.release.xcconfig"; sourceTree = "<group>"; };
+		A96629C05E383ED082208E0E1B30C595 /* Pods-ObjectiveSharpieIntegration */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ObjectiveSharpieIntegration"; path = Pods_ObjectiveSharpieIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC627EC7A10F21725CE161AA11DEFDA7 /* CleverPush-framework-CleverPushResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CleverPush-framework-CleverPushResources"; path = CleverPushResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE75983394EF52FCB49F29CCDD865AE7 /* Pods-ObjectiveSharpieIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjectiveSharpieIntegration-umbrella.h"; sourceTree = "<group>"; };
+		B7D363EFF69F780296600F606D23C328 /* CPButtonBlockCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CPButtonBlockCell.xib; path = CleverPush/CleverPush/Resources/CPButtonBlockCell.xib; sourceTree = "<group>"; };
+		B82ABFDA00A98DB9027A5FFBD0576312 /* CleverPush-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CleverPush-library.debug.xcconfig"; path = "../CleverPush-library/CleverPush-library.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE4EA5C44E02ECE174935C370337FF0 /* Pods-ObjectiveSharpieIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectiveSharpieIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
+		E15D7635BE3862D4ECE49986B2E5E603 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		E76D1831D03A6626AC6BC757D1414F2E /* Pods-ObjectiveSharpieIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectiveSharpieIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		FA5818F6009C78A8F4EB88FB4C15CA16 /* CleverPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverPush.framework; path = CleverPush/Framework/CleverPush.framework; sourceTree = "<group>"; };
+		FC30FF2CEA1EEE459EDFC2C7B7749C7D /* CleverPush-library-CleverPushResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CleverPush-library-CleverPushResources"; path = CleverPushResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42689578C4ADE1A8D3E082DFB7491DF9 /* Frameworks */ = {
+		0CAC3E56392A34D82708B2D69B74E836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050505FCDC600780EE090FA20E9A1C85 /* Foundation.framework in Frameworks */,
+				6CF289064C38EE9101E2E89398D4FFF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2915FBCCEFAB55CC5F020B1F5A828CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71DA83185C498FC80AD64090940A50CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EBBCF456F4895D8619AD5C9B21CC4FB /* Support Files */ = {
+		06486F71A43ADCA93B492B9A0F354E68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */,
-				D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */,
-				4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */,
-				4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */,
+				88407222D4F4756E9B8C06E3C11AAE87 /* CPAppBannerViewController.xib */,
+				0FCAE071A3A42F93BF76DD5D3964AD8B /* CPBannerCardContainer.xib */,
+				B7D363EFF69F780296600F606D23C328 /* CPButtonBlockCell.xib */,
+				4685D9E90D91C542CE9AAA63569DB6F3 /* CPHTMLBlockCell.xib */,
+				6A54445B55AA64AC6B253AAE38F8855D /* CPImageBlockCell.xib */,
+				95CB8CD50F57CE43864114C4B723465A /* CPInboxCell.xib */,
+				4DB0D15BF85CD3B9B57776B3C35A3618 /* CPTextBlockCell.xib */,
+				8A08BCCC6A1EEDE68839A1A86B115A95 /* CPTopicDialogCell.xib */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CleverPush-framework";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		2720C44A4835D2D0205DF874D911C738 /* Pods-ObjectiveSharpieIntegration */ = {
+		47B813FE49B505E9EAEB8C296062A352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDB9A61AF13970A52AF37EF54ED17011 /* Pods-ObjectiveSharpieIntegration.modulemap */,
-				2AA64804CC5B06B1A200D782F1FC336C /* Pods-ObjectiveSharpieIntegration-acknowledgements.markdown */,
-				4AED1DE3D5C713B670D21601C83670BE /* Pods-ObjectiveSharpieIntegration-acknowledgements.plist */,
-				09498642E05E3098E7654309E6EC00BE /* Pods-ObjectiveSharpieIntegration-dummy.m */,
-				83E2EA769B52A806BF1A04A6971769D7 /* Pods-ObjectiveSharpieIntegration-Info.plist */,
-				3AE9B2BDEF54CC3242EEF692F4C27781 /* Pods-ObjectiveSharpieIntegration-umbrella.h */,
-				06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */,
-				4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */,
+				AC627EC7A10F21725CE161AA11DEFDA7 /* CleverPush-framework-CleverPushResources */,
+				FC30FF2CEA1EEE459EDFC2C7B7749C7D /* CleverPush-library-CleverPushResources */,
+				A96629C05E383ED082208E0E1B30C595 /* Pods-ObjectiveSharpieIntegration */,
 			);
-			name = "Pods-ObjectiveSharpieIntegration";
-			path = "Target Support Files/Pods-ObjectiveSharpieIntegration";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -110,36 +166,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		591B138F6A4056A0B2F4B166317EC73A /* Targets Support Files */ = {
+		78BA560CD06540DDB5003DDD114458AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2720C44A4835D2D0205DF874D911C738 /* Pods-ObjectiveSharpieIntegration */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		90A80D9999548252768A36CF348FC636 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E2438DB61F8E96EE49AF50A57DEFAE22 /* CleverPush */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A6F10E29A4171987652712CC1511B862 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AC983179753CB6BF7B6D754307165B5A /* CleverPush.framework */,
+				FA5818F6009C78A8F4EB88FB4C15CA16 /* CleverPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB8FF3BBB47F8396C7370D4AEFEF9647 /* Products */ = {
+		ACA2E5B62B613BA4138C7D703F6DF350 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A96629C05E383ED082208E0E1B30C595 /* Pods_ObjectiveSharpieIntegration.framework */,
+				B919968C6EE35D1092B57912B684436B /* CleverPush */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B919968C6EE35D1092B57912B684436B /* CleverPush */ = {
+			isa = PBXGroup;
+			children = (
+				78BA560CD06540DDB5003DDD114458AA /* Frameworks */,
+				06486F71A43ADCA93B492B9A0F354E68 /* Resources */,
+				CFCE2DA89DF89E7997C103F5EECD8D9D /* Support Files */,
+			);
+			name = CleverPush;
+			path = CleverPush;
+			sourceTree = "<group>";
+		};
+		CA9FF25A0F714E7CA96D8646F3D51E3F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F96F155FB465B8A7C7CA1CA659C4D97F /* Pods-ObjectiveSharpieIntegration */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -147,10 +206,24 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				90A80D9999548252768A36CF348FC636 /* Pods */,
-				BB8FF3BBB47F8396C7370D4AEFEF9647 /* Products */,
-				591B138F6A4056A0B2F4B166317EC73A /* Targets Support Files */,
+				ACA2E5B62B613BA4138C7D703F6DF350 /* Pods */,
+				47B813FE49B505E9EAEB8C296062A352 /* Products */,
+				CA9FF25A0F714E7CA96D8646F3D51E3F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFCE2DA89DF89E7997C103F5EECD8D9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35ED4F7FF767D2C168628171EB73D04B /* CleverPush-framework.debug.xcconfig */,
+				5CB18365FB718E336036D1B41B187561 /* CleverPush-framework.release.xcconfig */,
+				B82ABFDA00A98DB9027A5FFBD0576312 /* CleverPush-library.debug.xcconfig */,
+				1DCCB5697BC34A78F52BEC8E14A5A46C /* CleverPush-library.release.xcconfig */,
+				72A1F8372B15DD5BD76E99ECF59B1539 /* ResourceBundle-CleverPushResources-CleverPush-framework-Info.plist */,
+				8077DE9AC679F49CBAF2FDA01E3201E5 /* ResourceBundle-CleverPushResources-CleverPush-library-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CleverPush-framework";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -161,24 +234,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E2438DB61F8E96EE49AF50A57DEFAE22 /* CleverPush */ = {
+		F96F155FB465B8A7C7CA1CA659C4D97F /* Pods-ObjectiveSharpieIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				A6F10E29A4171987652712CC1511B862 /* Frameworks */,
-				0EBBCF456F4895D8619AD5C9B21CC4FB /* Support Files */,
+				3D7CDBC0F1E9B6F22B71D29F3576C789 /* Pods-ObjectiveSharpieIntegration.modulemap */,
+				7ADC0C34CE709541F9AD75A799DE9542 /* Pods-ObjectiveSharpieIntegration-acknowledgements.markdown */,
+				BFE4EA5C44E02ECE174935C370337FF0 /* Pods-ObjectiveSharpieIntegration-acknowledgements.plist */,
+				01623026534763F91E4FC199CB1305C4 /* Pods-ObjectiveSharpieIntegration-dummy.m */,
+				389BACAC8A989556888C28AB15CA84B8 /* Pods-ObjectiveSharpieIntegration-Info.plist */,
+				5D7AD61EF5B07266A03C5E882FAB15E5 /* Pods-ObjectiveSharpieIntegration-resources.sh */,
+				AE75983394EF52FCB49F29CCDD865AE7 /* Pods-ObjectiveSharpieIntegration-umbrella.h */,
+				E15D7635BE3862D4ECE49986B2E5E603 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */,
+				E76D1831D03A6626AC6BC757D1414F2E /* Pods-ObjectiveSharpieIntegration.release.xcconfig */,
 			);
-			name = CleverPush;
-			path = CleverPush;
+			name = "Pods-ObjectiveSharpieIntegration";
+			path = "Target Support Files/Pods-ObjectiveSharpieIntegration";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A4136395F6DB6C07A7ECD4E1D0FBC0BB /* Headers */ = {
+		E07493C89F256C80F84D528AFCFA0CCE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0208D7759013051C36AC917960F5EA7F /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */,
+				184C888EA65691B0F92AB4713E2BCCC5 /* Pods-ObjectiveSharpieIntegration-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,22 +267,56 @@
 /* Begin PBXNativeTarget section */
 		2FD48F3F449C04CCB410AB52AC6554AF /* Pods-ObjectiveSharpieIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCA80B672FC484974BACE2C6943E4344 /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */;
+			buildConfigurationList = 86D5194D67C01AA4F1C916BC92BA3CCB /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */;
 			buildPhases = (
-				A4136395F6DB6C07A7ECD4E1D0FBC0BB /* Headers */,
-				3D26E08421429DDD0AA477C7C3B02C7A /* Sources */,
-				42689578C4ADE1A8D3E082DFB7491DF9 /* Frameworks */,
-				DE50F99BE6FD01099D0296A2D16D0506 /* Resources */,
+				E07493C89F256C80F84D528AFCFA0CCE /* Headers */,
+				59CCF5997D9BA4148C19FABA4A1D5860 /* Sources */,
+				0CAC3E56392A34D82708B2D69B74E836 /* Frameworks */,
+				2A39B002269272F75E5E40AD4459DCB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1AB2A6FFCF50345241CDE02E82FCF94F /* PBXTargetDependency */,
+				E47A26D956A2746FFF0CA77618673F39 /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjectiveSharpieIntegration";
-			productName = "Pods-ObjectiveSharpieIntegration";
-			productReference = A96629C05E383ED082208E0E1B30C595 /* Pods_ObjectiveSharpieIntegration.framework */;
+			productName = Pods_ObjectiveSharpieIntegration;
+			productReference = A96629C05E383ED082208E0E1B30C595 /* Pods-ObjectiveSharpieIntegration */;
 			productType = "com.apple.product-type.framework";
+		};
+		49A0535BDD50951B00BB14428E661CFE /* CleverPush-library-CleverPushResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284B3130668FB1E19A9A9FFC18FFA682 /* Build configuration list for PBXNativeTarget "CleverPush-library-CleverPushResources" */;
+			buildPhases = (
+				BC554D06BCA9FFD9397E097870B7AAE0 /* Sources */,
+				71DA83185C498FC80AD64090940A50CC /* Frameworks */,
+				1036F25472C09041408D175C7A664333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CleverPush-library-CleverPushResources";
+			productName = CleverPushResources;
+			productReference = FC30FF2CEA1EEE459EDFC2C7B7749C7D /* CleverPush-library-CleverPushResources */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E8F216284CB1B6757CA797A22CB6EC05 /* CleverPush-framework-CleverPushResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8171FC08D3BD5A7193C26E9660904224 /* Build configuration list for PBXNativeTarget "CleverPush-framework-CleverPushResources" */;
+			buildPhases = (
+				75363F574E8C1BF1D2206482CAE138BE /* Sources */,
+				2915FBCCEFAB55CC5F020B1F5A828CBD /* Frameworks */,
+				0FB50A99D4DB25412EC519698981255C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CleverPush-framework-CleverPushResources";
+			productName = CleverPushResources;
+			productReference = AC627EC7A10F21725CE161AA11DEFDA7 /* CleverPush-framework-CleverPushResources */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,31 +324,63 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BB8FF3BBB47F8396C7370D4AEFEF9647 /* Products */;
+			productRefGroup = 47B813FE49B505E9EAEB8C296062A352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */,
+				E8F216284CB1B6757CA797A22CB6EC05 /* CleverPush-framework-CleverPushResources */,
 				A78C5148CBF8E4EE9D1F7AE536795C7F /* CleverPush-library */,
+				49A0535BDD50951B00BB14428E661CFE /* CleverPush-library-CleverPushResources */,
 				2FD48F3F449C04CCB410AB52AC6554AF /* Pods-ObjectiveSharpieIntegration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE50F99BE6FD01099D0296A2D16D0506 /* Resources */ = {
+		0FB50A99D4DB25412EC519698981255C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4885F3C3B51B3452E2D263506CD163EC /* CPAppBannerViewController.xib in Resources */,
+				B288BEC205FDD52CEBD27D97604B74DE /* CPBannerCardContainer.xib in Resources */,
+				D72F604909FC3233B572F9AC670BDB13 /* CPButtonBlockCell.xib in Resources */,
+				6EF73C0C29C3B31BF7D46A2EAB59EB77 /* CPHTMLBlockCell.xib in Resources */,
+				4C093449AB8A97B1E38F7998B07FC7B7 /* CPImageBlockCell.xib in Resources */,
+				A4F74F7A9A9DAE9DB19226B13E49F02A /* CPInboxCell.xib in Resources */,
+				FEDDA312C78EEB2A3AC07BA269C7E3E1 /* CPTextBlockCell.xib in Resources */,
+				47D2ACC40A4A60865FA9593C2CC6F0BB /* CPTopicDialogCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1036F25472C09041408D175C7A664333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7407901B600FB034DA8B33380F63524B /* CPAppBannerViewController.xib in Resources */,
+				41A2970C2F6C05943B7B23AC71948F4C /* CPBannerCardContainer.xib in Resources */,
+				A63293766C15D7CDADA69C1BC7AA968C /* CPButtonBlockCell.xib in Resources */,
+				1FEBAD23C73846B6ED45D260BC31731B /* CPHTMLBlockCell.xib in Resources */,
+				293D4F31AF51A484005870C82C8DCC36 /* CPImageBlockCell.xib in Resources */,
+				0B7B4093A9311745E66A62DCEA01260B /* CPInboxCell.xib in Resources */,
+				C98F6B7DDAECFE62D80F7E87647123C6 /* CPTextBlockCell.xib in Resources */,
+				25D0D07380D5C0B686DE0BD44851D423 /* CPTopicDialogCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A39B002269272F75E5E40AD4459DCB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,29 +390,122 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D26E08421429DDD0AA477C7C3B02C7A /* Sources */ = {
+		59CCF5997D9BA4148C19FABA4A1D5860 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54D92E24BF98EFABA19A496EC1499F8 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */,
+				0534FE98ACE086968B382E092417FCF7 /* Pods-ObjectiveSharpieIntegration-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75363F574E8C1BF1D2206482CAE138BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC554D06BCA9FFD9397E097870B7AAE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1AB2A6FFCF50345241CDE02E82FCF94F /* PBXTargetDependency */ = {
+		5634CDC95024E3DBB9BF5DAF921FC7EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CleverPush-framework-CleverPushResources";
+			target = E8F216284CB1B6757CA797A22CB6EC05 /* CleverPush-framework-CleverPushResources */;
+			targetProxy = 96C47122CD114E4725F27CB61F34DA44 /* PBXContainerItemProxy */;
+		};
+		C683A8A3575C677048EFDF54DE707CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CleverPush-library-CleverPushResources";
+			target = 49A0535BDD50951B00BB14428E661CFE /* CleverPush-library-CleverPushResources */;
+			targetProxy = 3BE48DF08BCF6C48F35F36CD5AA4AD49 /* PBXContainerItemProxy */;
+		};
+		E47A26D956A2746FFF0CA77618673F39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CleverPush-framework";
 			target = 08FD6041424453E8E604531E2E4D1990 /* CleverPush-framework */;
-			targetProxy = E1EB67BE4C6EA1FA88E80462694212CE /* PBXContainerItemProxy */;
+			targetProxy = 01D73FC89B9712925F5F9F0E7F8B9139 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2F0020C9273967E476BFC1853822F9EA /* Debug */ = {
+		37475B2C5819535CC6BACF86F5D504F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CBA8099489B836D54CF2F37F5CD4E5C /* CleverPush-library.debug.xcconfig */;
+			baseConfigurationReference = B82ABFDA00A98DB9027A5FFBD0576312 /* CleverPush-library.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CleverPush-library";
+				IBSC_MODULE = CleverPush;
+				INFOPLIST_FILE = "Target Support Files/CleverPush-library/ResourceBundle-CleverPushResources-CleverPush-library-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = CleverPushResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3B2164ADAF48DDF64D5EFBD976EC5FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76D1831D03A6626AC6BC757D1414F2E /* Pods-ObjectiveSharpieIntegration.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CB838CA99F05EF70D4F721BADDB500C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB18365FB718E336036D1B41B187561 /* CleverPush-framework.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CleverPush-framework";
+				IBSC_MODULE = CleverPush;
+				INFOPLIST_FILE = "Target Support Files/CleverPush-framework/ResourceBundle-CleverPushResources-CleverPush-framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CleverPushResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4579BBD1A868D2254C0F707803BD709C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82ABFDA00A98DB9027A5FFBD0576312 /* CleverPush-library.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -279,9 +518,59 @@
 			};
 			name = Debug;
 		};
-		429CB46FE98026AF0CF48CA2E372B462 /* Release */ = {
+		49558FF4F0B34A0EAC2D69281840FF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21A362C037664C6E8E39B7DE72A2B8D /* CleverPush-framework.release.xcconfig */;
+			baseConfigurationReference = E15D7635BE3862D4ECE49986B2E5E603 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52A00A5943182621177D2FC778D06A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCCB5697BC34A78F52BEC8E14A5A46C /* CleverPush-library.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CleverPush-library";
+				IBSC_MODULE = CleverPush;
+				INFOPLIST_FILE = "Target Support Files/CleverPush-library/ResourceBundle-CleverPushResources-CleverPush-library-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = CleverPushResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		57A4E49CE4E399BA1BADBF7894B3D8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35ED4F7FF767D2C168628171EB73D04B /* CleverPush-framework.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,13 +579,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		54C7BB85A40ACF59B090B66900C8FC63 /* Release */ = {
+		657350A2D684EF5FB7C5610D3A30ADC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4527D9B058473C3BFAE9837E96FCCE6D /* CleverPush-library.release.xcconfig */;
+			baseConfigurationReference = 1DCCB5697BC34A78F52BEC8E14A5A46C /* CleverPush-library.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -376,6 +664,22 @@
 			};
 			name = Debug;
 		};
+		8F6347EE07D310CF3F7483DDD5A9F137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35ED4F7FF767D2C168628171EB73D04B /* CleverPush-framework.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CleverPush-framework";
+				IBSC_MODULE = CleverPush;
+				INFOPLIST_FILE = "Target Support Files/CleverPush-framework/ResourceBundle-CleverPushResources-CleverPush-framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CleverPushResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,78 +742,9 @@
 			};
 			name = Release;
 		};
-		E9151B9E745201673ECA544551C4FB54 /* Release */ = {
+		DAB04C8BCBEFB3EDDC1F61589A7E76D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E665D1E31D3E08F0AAE3C6303AE1808 /* Pods-ObjectiveSharpieIntegration.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F9EC025F8CF89BBEB0697986F4264D00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06BCE790EE39AF8B3D66FEC2AF1147F4 /* Pods-ObjectiveSharpieIntegration.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjectiveSharpieIntegration/Pods-ObjectiveSharpieIntegration.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FF982A23E656BCF846B85915DA0A5D2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9A7A0EAE01DA817D921356B2A851F0C /* CleverPush-framework.debug.xcconfig */;
+			baseConfigurationReference = 5CB18365FB718E336036D1B41B187561 /* CleverPush-framework.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -518,12 +753,31 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		284B3130668FB1E19A9A9FFC18FFA682 /* Build configuration list for PBXNativeTarget "CleverPush-library-CleverPushResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37475B2C5819535CC6BACF86F5D504F4 /* Debug */,
+				52A00A5943182621177D2FC778D06A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BF79D4BAF283552B994D46E94BE96D /* Build configuration list for PBXAggregateTarget "CleverPush-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4579BBD1A868D2254C0F707803BD709C /* Debug */,
+				657350A2D684EF5FB7C5610D3A30ADC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -533,29 +787,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D05AED9AAA8CF82F049444EBE32A818 /* Build configuration list for PBXAggregateTarget "CleverPush-library" */ = {
+		5CD8D07969ED5B1BBBD48D1A051C50EC /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F0020C9273967E476BFC1853822F9EA /* Debug */,
-				54C7BB85A40ACF59B090B66900C8FC63 /* Release */,
+				57A4E49CE4E399BA1BADBF7894B3D8E6 /* Debug */,
+				DAB04C8BCBEFB3EDDC1F61589A7E76D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCA80B672FC484974BACE2C6943E4344 /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */ = {
+		8171FC08D3BD5A7193C26E9660904224 /* Build configuration list for PBXNativeTarget "CleverPush-framework-CleverPushResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9EC025F8CF89BBEB0697986F4264D00 /* Debug */,
-				E9151B9E745201673ECA544551C4FB54 /* Release */,
+				8F6347EE07D310CF3F7483DDD5A9F137 /* Debug */,
+				3CB838CA99F05EF70D4F721BADDB500C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE6A6895B2EB1324CE400F272A5E9697 /* Build configuration list for PBXAggregateTarget "CleverPush-framework" */ = {
+		86D5194D67C01AA4F1C916BC92BA3CCB /* Build configuration list for PBXNativeTarget "Pods-ObjectiveSharpieIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF982A23E656BCF846B85915DA0A5D2C /* Debug */,
-				429CB46FE98026AF0CF48CA2E372B462 /* Release */,
+				49558FF4F0B34A0EAC2D69281840FF89 /* Debug */,
+				3B2164ADAF48DDF64D5EFBD976EC5FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

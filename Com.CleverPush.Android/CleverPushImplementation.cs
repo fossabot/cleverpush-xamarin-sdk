@@ -1,16 +1,14 @@
 ﻿using Android.App;
-using Android.Content;
-using System;
 using Com.CleverPush.Abstractions;
 using System.Collections.Generic;
 
 namespace Com.CleverPush
 {
    public class CleverPushImplementation : CleverPushShared, ICleverPush
-   {
+	{
 		public void Init(string channelId)
 		{
-			Android.CleverPush.GetInstance(Application.Context).Init(channelId, null, null, null, true);
+			Android.CleverPush.GetInstance(Application.Context).Init(channelId, new NotificationReceivedHandler(), new NotificationOpenedHandler(), new SubscribedListener(), builder._autoRegister);
 		}
 
 		public override void InitPlatform()

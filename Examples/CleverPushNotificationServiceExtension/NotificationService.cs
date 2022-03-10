@@ -1,9 +1,7 @@
 ﻿using System;
 using Foundation;
-using UIKit;
 using UserNotifications;
 using Com.CleverPush;
-using Com.CleverPush.Abstractions;
 
 namespace CleverPushNotificationServiceExtension
 {
@@ -25,9 +23,9 @@ namespace CleverPushNotificationServiceExtension
       ContentHandler = contentHandler;
       BestAttemptContent = (UNMutableNotificationContent)request.Content.MutableCopy();
 
-      (CleverPush.Current as CleverPushImplementation).DidReceiveNotificationExtensionRequest(request, BestAttemptContent);
+            (CleverPush.Current as CleverPushImplementation).DidReceiveNotificationExtensionRequest(request, BestAttemptContent);
 
-      ContentHandler(BestAttemptContent);
+            ContentHandler(BestAttemptContent);
     }
 
     public override void TimeWillExpire()
