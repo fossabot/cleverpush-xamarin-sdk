@@ -298,5 +298,10 @@ namespace Com.CleverPush
 		{
 			iOS.CleverPush.SetIncrementBadge(increment);
 		}
+
+		public override void SetShowNotificationsInForeground(bool show)
+		{
+			iOS.CleverPush.SetShowNotificationsInForeground(show);
+		}
 	}
 }

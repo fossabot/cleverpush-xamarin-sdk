@@ -1,3 +1,6 @@
+# 1.3.1
+* Implemented `SetShowNotificationsInForeground(bool)`
+
 # 1.3.0
 * Fixed NotificationOpened/Received handlers for Android
 * Updated native Android + iOS SDKs

@@ -48,6 +48,7 @@ namespace Com.CleverPush.Abstractions
 
 		public abstract void SetAutoClearBadge(bool autoClear);
 		public abstract void SetIncrementBadge(bool increment);
+		public abstract void SetShowNotificationsInForeground(bool show);
 
 		public XamarinBuilder builder;
 

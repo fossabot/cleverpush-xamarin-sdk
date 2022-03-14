@@ -41,5 +41,6 @@ namespace Com.CleverPush.Abstractions
 
 		void SetAutoClearBadge(bool autoClear);
 		void SetIncrementBadge(bool increment);
+		void SetShowNotificationsInForeground(bool show);
 	}
 }

@@ -6,9 +6,11 @@ namespace Com.CleverPush
 {
    public class CleverPushImplementation : CleverPushShared, ICleverPush
 	{
+		private bool showNotificationsInForeground = true;
+
 		public void Init(string channelId)
 		{
-			Android.CleverPush.GetInstance(Application.Context).Init(channelId, new NotificationReceivedHandler(), new NotificationOpenedHandler(), new SubscribedListener(), builder._autoRegister);
+			Android.CleverPush.GetInstance(Application.Context).Init(channelId, new NotificationReceivedHandler(showNotificationsInForeground), new NotificationOpenedHandler(), new SubscribedListener(), builder._autoRegister);
 		}
 
 		public override void InitPlatform()
@@ -167,6 +169,11 @@ namespace Com.CleverPush
 		public override void SetIncrementBadge(bool increment)
 		{
 			Android.CleverPush.GetInstance(Application.Context).IncrementBadge = increment;
+		}
+
+		public override void SetShowNotificationsInForeground(bool show)
+		{
+			showNotificationsInForeground = show;
 		}
 	}
 }

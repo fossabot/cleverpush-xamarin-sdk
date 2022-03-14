@@ -2,11 +2,20 @@
 
 namespace Com.CleverPush
 {
-    public class NotificationReceivedHandler : Java.Lang.Object, Android.INotificationReceivedListener
-	{
-        public void NotificationReceived(Android.NotificationOpenedResult result)
+    public class NotificationReceivedHandler : Android.NotificationReceivedCallbackListener
+    {
+        private bool showNotificationsInForeground;
+
+        public NotificationReceivedHandler(bool _showNotificationsInForeground)
+        {
+            showNotificationsInForeground = _showNotificationsInForeground;
+        }
+
+        public override bool NotificationReceivedCallback(Android.NotificationOpenedResult result)
         {
             (CleverPush.Current as CleverPushImplementation).OnNotificationReceived(NotificationOpenedHandler.CPNotificationOpenedResultToNative(result));
+
+            return showNotificationsInForeground;
         }
-    }
+	}
 }

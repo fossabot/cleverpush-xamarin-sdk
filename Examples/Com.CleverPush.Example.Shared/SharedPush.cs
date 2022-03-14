@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-
-using Com.CleverPush;
-using Com.CleverPush.Abstractions;
+﻿using System.Diagnostics;
 
 namespace Com.CleverPush.Example.Shared
 {
