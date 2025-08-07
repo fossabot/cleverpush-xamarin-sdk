@@ -1,4 +1,6 @@
 # CleverPush Xamarin SDK
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcleverpush%2Fcleverpush-xamarin-sdk.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcleverpush%2Fcleverpush-xamarin-sdk?ref=badge_shield)
+
 
 ## Release new version:
 
@@ -26,3 +28,6 @@ Convert XIB to NIB files:
 ```
 find . -name "*.xib" -type f | awk '{sub(/.xib/,"");print}' | xargs -I % ibtool --compile %.nib %.xib
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcleverpush%2Fcleverpush-xamarin-sdk.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcleverpush%2Fcleverpush-xamarin-sdk?ref=badge_large)
